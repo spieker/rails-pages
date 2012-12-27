@@ -7,17 +7,14 @@ require "rails-pages/version"
 Gem::Specification.new do |s|
   s.name        = "rails-pages"
   s.version     = RailsPages::VERSION
-  s.authors     = ["TODO: Your name"]
-  s.email       = ["TODO: Your email"]
-  s.homepage    = "TODO"
-  s.summary     = "TODO: Summary of RailsPages."
-  s.description = "TODO: Description of RailsPages."
+  s.authors     = ["Paul Spieker"]
+  s.email       = ["p.spieker@duenos.de"]
+  s.homepage    = "https://github.com/spieker/rails-pages"
+  s.summary     = "A really simple rails engine, serving text files from app/pages as HTML (currently only supports Markdown)"
+  s.description = ""
 
-  s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.rdoc"]
+  s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.markdown"]
 
   s.add_dependency "rails", "~> 3.2.9"
   s.add_dependency "redcarpet", "~> 2.2.2"
-  # s.add_dependency "jquery-rails"
-
-  s.add_development_dependency "sqlite3"
 end
